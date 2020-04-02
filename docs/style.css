@@ -6,6 +6,10 @@ header {
   background-color: coral;
   height: 10vh;
 }
+.container-header{
+  display: flex;
+  flex: 1;
+}
 
 h1 {
   margin: auto;

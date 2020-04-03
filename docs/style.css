@@ -2,49 +2,112 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: coral;
-  height: 10vh;
-}
-.container-header{
-  display: flex;
-  flex: 1;
+/*Body*/
+
+body{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: inherit;
+ 
 }
 
-h1 {
-  margin: auto;
+
+
+/* Flex Item*/
+
+.container-header{
+  max-width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  background-color: rgb(252, 91, 33);
+ 
+  
+
 }
+
+.container-header img{
+  height: 90px;
+ 
+ 
+}
+
+.container-header .item2{
+  height: 2rem;
+  margin-right: 10px;
+ 
+}
+
+
+
+/*Menu*/
+
+
+
+nav {
+  position: fixed;
+  padding: 1%;
+  height: 70%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  
+  
+
+}
+
+.coluna{
+  padding-left: 1%;
+  
+}  
+
+.item5{
+  border-bottom: 0.3em solid black;
+  width: 9rem;
+}
+
+.linha-vertical {
+  border-left: 0.4em solid black;
+  height: 41rem;
+  position: absolute;
+  left: 10%;
+  top: 12rem;
+}
+
+.menu a:first-child{
+  text-decoration: none;
+  color: black;
+}
+
+
+/*Vídeos*/
 
 .container-videos {
   display: flex;
-  flex-direction: column;
-  width: 95vw;
-  text-align: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80%;
+  
+  margin-left: 15%;
+ 
 }
 
-.lista-video {
-  margin-top: 8rem;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 3fr 3fr 3fr;
-  height: 115vh;
-}
-
-.lista-video li {
+.container-videos li{
   list-style: none;
-    
 }
-
 
 
 .rodape {
-  background-color: coral;
-  height: 10vh;
+  background-color: rgb(252, 91, 33);
+  height: 6rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    
 }
 
 p{
   color: white;
   text-align: center;
 }
+
